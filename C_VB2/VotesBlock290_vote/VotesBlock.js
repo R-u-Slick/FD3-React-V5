@@ -62,7 +62,7 @@
       React.createElement(VotesQuestion, {question:this.props.question} ),
       React.DOM.div( {className:'Answers'}, answersCode ),
       ((this.state.workMode==1)&&this.state.selectedAnswerCode)
-        ?React.DOM.input( {type:'button',value:'проголосовать',onClick:this.vote} )
+        ?React.DOM.input( {type:'button',value:'проголосовать',onClick:this.vote, className:"reset-button"} )
         :null
     );
 
